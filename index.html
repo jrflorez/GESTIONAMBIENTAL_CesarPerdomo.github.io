@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclaje Orgánico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Depósito de Residuos COP-16</h1>
+        <form id="recycleForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="account">Cuenta Bancaria:</label>
+            <input type="text" id="account" name="account" required>
+
+            <label for="wasteType">Banco:</label>
+            <select id="wasteType" name="wasteType" required>
+                <option value="nequi">nequi</option>
+                <option value="daviplata">daviplata</option>
+                <option value="Bancolombia">Bancolombia</option>
+           </select>
+
+            <label for="wasteType">Tipo de Residuo:</label>
+            <select id="wasteType" name="wasteType" required>
+                <option value="compostable">Compostable</option>
+                <option value="Plasticos">Plasticos</option>
+                <option value="vidrio">vidrio</option>
+                <option value="archivo">archivo</option>
+            </select>
+
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <button type="button" onclick="calculateReward()">Calcular y Enviar</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
